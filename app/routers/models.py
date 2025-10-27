@@ -1,7 +1,7 @@
-from fastapi import APIRouter, Depends, HTTPException
-from typing import Dict, Any
-from ..schemas import ModelsResponse
 
+from fastapi import APIRouter, Depends, HTTPException
+
+from ..schemas import ModelsResponse
 
 router = APIRouter(prefix="/models", tags=["models"])
 
@@ -18,7 +18,7 @@ def get_pricing_loader():
 async def list_models(loader=Depends(get_pricing_loader)) -> ModelsResponse:
     """
     List all available models with their pricing configurations.
-    
+
     Returns the current pricing table loaded in memory.
     """
     models = loader.list_models()

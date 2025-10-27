@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-from ..schemas import HealthResponse
 
+from ..schemas import HealthResponse
 
 router = APIRouter(prefix="/healthz", tags=["health"])
 
@@ -9,7 +9,7 @@ router = APIRouter(prefix="/healthz", tags=["health"])
 async def health_check() -> HealthResponse:
     """
     Health check endpoint.
-    
+
     Returns service status and number of loaded models.
     """
     try:
