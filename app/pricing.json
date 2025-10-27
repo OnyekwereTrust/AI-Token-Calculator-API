@@ -1,0 +1,78 @@
+{
+  "openai:gpt-4o-mini": {
+    "vendor": "openai",
+    "context": 128000,
+    "input_per_1k": 0.15,
+    "output_per_1k": 0.60,
+    "tokenizer": "o200k_base",
+    "kind": "chat"
+  },
+  "openai:gpt-4o": {
+    "vendor": "openai",
+    "context": 128000,
+    "input_per_1k": 5.00,
+    "output_per_1k": 15.00,
+    "tokenizer": "o200k_base",
+    "kind": "chat"
+  },
+  "openai:gpt-4": {
+    "vendor": "openai",
+    "context": 128000,
+    "input_per_1k": 30.00,
+    "output_per_1k": 60.00,
+    "tokenizer": "cl100k_base",
+    "kind": "chat"
+  },
+  "openai:gpt-3.5-turbo": {
+    "vendor": "openai",
+    "context": 16384,
+    "input_per_1k": 0.50,
+    "output_per_1k": 1.50,
+    "tokenizer": "cl100k_base",
+    "kind": "chat"
+  },
+  "anthropic:claude-3-5-sonnet": {
+    "vendor": "anthropic",
+    "context": 200000,
+    "input_per_1k": 3.00,
+    "output_per_1k": 15.00,
+    "tokenizer": "anthropic_approx_bpe",
+    "kind": "chat"
+  },
+  "anthropic:claude-3-haiku": {
+    "vendor": "anthropic",
+    "context": 200000,
+    "input_per_1k": 0.25,
+    "output_per_1k": 1.25,
+    "tokenizer": "anthropic_approx_bpe",
+    "kind": "chat"
+  },
+  "openai:text-embedding-3-small": {
+    "vendor": "openai",
+    "input_per_1k": 0.02,
+    "tokenizer": "cl100k_base",
+    "kind": "embedding"
+  },
+  "openai:text-embedding-3-large": {
+    "vendor": "openai",
+    "input_per_1k": 0.13,
+    "tokenizer": "cl100k_base",
+    "kind": "embedding"
+  },
+  "meta:llama-3-8b": {
+    "vendor": "meta",
+    "context": 131072,
+    "input_per_1k": 0.30,
+    "output_per_1k": 0.30,
+    "tokenizer": "llama_approx_bpe",
+    "kind": "chat"
+  },
+  "meta:llama-3-70b": {
+    "vendor": "meta",
+    "context": 131072,
+    "input_per_1k": 0.65,
+    "output_per_1k": 0.65,
+    "tokenizer": "llama_approx_bpe",
+    "kind": "chat"
+  }
+}
