@@ -1,4 +1,4 @@
-# Token Calculator API
+# AI Token Calculator API
 
 A production-ready HTTP service that estimates token usage and cost for different Large Language Models (LLMs) by model type.
 
@@ -218,7 +218,3 @@ Once running, visit:
 4. Add tests
 5. Run the test suite
 6. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details.
