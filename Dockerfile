@@ -10,6 +10,10 @@ RUN apt-get update && apt-get install -y \
 
 # Copy poetry files
 COPY pyproject.toml poetry.lock* ./
+
+# Install deps into the *global* env (not a venv)
+RUN poetry config virtualenvs.create false && \
+    poetry install --with dev --no-interaction --no-ansi
     
 
 # Copy application code
