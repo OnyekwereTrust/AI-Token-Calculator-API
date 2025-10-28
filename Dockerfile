@@ -10,10 +10,6 @@ RUN apt-get update && apt-get install -y \
 
 # Copy poetry files
 COPY pyproject.toml ./
-
-# Install poetry and dependencies
-RUN pip install poetry && \
-    poetry config virtualenvs.create false && \
     
 
 # Copy application code
