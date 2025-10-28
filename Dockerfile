@@ -13,7 +13,7 @@ COPY pyproject.toml poetry.lock* ./
 
 # Install deps into the *global* env (not a venv)
 RUN poetry config virtualenvs.create false && \
-    poetry install --with dev --no-interaction --no-ansi
+    poetry install --with-dev --no-interaction --no-ansi
     
 
 # Copy application code
