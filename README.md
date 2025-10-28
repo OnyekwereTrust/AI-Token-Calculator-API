@@ -2,6 +2,9 @@
 
 A production-ready HTTP service that estimates token usage and cost for different Large Language Models (LLMs) by model type.
 
+<img width="3024" height="1714" alt="image" src="https://github.com/user-attachments/assets/bc4e7d4d-5b54-4179-8664-f075f7776b07" />
+
+
 ## Features
 
 - **Accurate Tokenization**: Uses correct tokenizers per model (tiktoken for OpenAI, approximations for others)
